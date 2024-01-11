@@ -6,7 +6,6 @@ Arnav Kolli: arnav-kolli
 Rahul Vedula: rvedula02  
 Anvesh Sunkara: Anvesh8712
 
-Innovative Idea:
 Our idea is similar to existing dating apps. Current dating apps suggest users to each other based on a variety of features depending on the app. Tinder is mostly physical attributes while Bumble or Hinge use prompts that users can fill out. In our case we intend to design an app that one can use to discover both people AND music. 
 We intend to analyze user's music preferences so we can match users with similar music tastes while also having a discover music functionality where we suggest new music that can be added to a playlist. We're sure that the idea and concept itself is not new, however, we have not encountered an app that uses music as the base for matches. This makes the concept slightly unique in that it is a dating AND music app (sorta!).
 
