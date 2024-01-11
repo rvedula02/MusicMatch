@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>MusicMatch</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="module" src="./js/playlists.js"></script>
+    <link rel = "stylesheet" href="./playlist.css">
+    <!-- <style>
+      .header {
+        background-color: #256dd8; 
+        color: white;
+        padding: 10px; 
+        text-align: center; 
+        letter-spacing: 3px;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .nav-tabs > li.active > a {
+        color: blue;
+      }
+
+      .nav-tabs > li > a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .nav-tabs {
+        border: none;
+      }
+
+      .strip2 {
+        background-color: #256dd8;
+        color: white;
+        border-radius: 10px;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .btn-orange {
+        background-color: orange;
+        color: white;
+        height: 200px;
+        white-space: normal; 
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="header">
+      <ul class="nav nav-tabs">
+        <li><a href="/client/Home.html">MusicMatch</a></li>
+        <li><a href="/client/groups.html">CrewMatch</a></li>
+        <li class = "active"><a href="/client/Playlists.html">Playlists</a></li>
+        <li><a href="/client/Discover.html">Discover</a></li>
+      </ul>
+    </div>
+    <div id="playlists"></div>
+    <!-- <div id = "createNew">
+        <label for="newPlaylist">Playlist name:</label>
+        <input type="text" name="playlistname" id = "playlistname">
+        <button id = "createPlaylist">Create</button>
+    </div> -->
+    <div id="playlist"></div>
+    <div id = "exportTo"><button id ="deleteSelected">Delete selected</button></div>
+    
+  </body>
+</html>

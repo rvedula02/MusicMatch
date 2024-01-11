@@ -1,0 +1,103 @@
+body{
+  background-color:whitesmoke;
+}
+
+.header {
+    background-color: #256dd8; 
+    color: white;
+    padding: 10px; 
+    text-align: center; 
+    letter-spacing: 3px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .nav-tabs > li.active > a {
+    color: blue;
+  }
+
+  .nav-tabs > li > a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-tabs {
+    border: none;
+  }
+
+  .strip2 {
+    background-color: #256dd8;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .btn-orange {
+    background-color: orange;
+    color: white;
+    height: 200px;
+    white-space: normal; 
+  }
+
+  .playlist-table{
+    width: 80%; 
+    margin: 0 auto; 
+    border-collapse: collapse; 
+    border: 1px solid rgb(139, 158, 227);
+    overflow-y: scroll; 
+    height: 400px; 
+  }
+  
+  .playlist-table td, .playlist-table th {
+    background-color: white;
+    padding: 10px; 
+    border: 3px solid rgb(139, 158, 227); 
+  }
+  
+  .playlist-table th {
+    background-color: rgb(139, 158, 227);
+    color: white;
+  }
+
+  .selectAll{
+    width: 15px;
+    height: 15px;
+  }
+  h1{
+    text-align: center;
+  }
+
+  .export-container {
+    background-color: rgb(139, 158, 227);
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .export-container select {
+    color: black;
+    margin-right: 10px;
+  }
+  
+  .export-container select option {
+    color: black;
+  }
+  
+  .export-container button {
+    padding: 5px 10px;
+    background-color: rgb(109, 124, 200);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px; /* Add space to the right of the buttons */
+  }
+  
+  .export-container button:hover {
+    background-color: rgb(109, 128, 197);
+  }
+  

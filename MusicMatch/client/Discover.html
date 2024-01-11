@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>MusicMatch</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/4a2acbc2d9.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .header {
+        background-color: #256dd8; 
+        color: white;
+        padding: 10px; 
+        text-align: center; 
+        letter-spacing: 3px;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .nav-tabs > li.active > a {
+        color: blue;
+      }
+
+      .nav-tabs > li > a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .nav-tabs {
+        border: none;
+      }
+            
+      .song img {
+        height: 200px;
+        width: 200px;
+        margin: 20px auto;
+        object-fit: cover;
+      }
+      
+      .song-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+
+      .dislike-btn {
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        border: none;
+        font-size: 24px;
+        width: 50px;
+        height: 50px;
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .like-btn {
+        background-color: green;
+        color: white;
+        border-radius: 50%;
+        border: none;
+        font-size: 24px;
+        width: 50px;
+        height: 50px;
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .like-btn:hover,
+      .dislike-btn:hover {
+        background-color: #256dd8;
+      }
+
+      .song {
+        background-color: #256dd8;
+        color: white;
+        border-radius: 10px;
+        padding: 20px;
+        width: 22%;
+        margin: 50px 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .song img {
+        height: 200px;
+        width: 200px;
+        margin: 20px auto;
+        object-fit: cover;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <ul class="nav nav-tabs">
+        <li><a href="/client/Home.html">MusicMatch</a></li>
+        <li><a href="/client/groups.html">CrewMatch</a></li>
+        <li><a href="/client/Playlists.html">Playlists</a></li>
+        <li class="active"><a href="/client/Discover.html">Discover</a></li>
+      </ul>
+    </div>
+    <div class="song-container">
+      <button class="dislike-btn" id="dislike-btn">
+        <i class="fas fa-thumbs-down"></i>
+      </button>
+      <div class="song" id="song">
+        <img src="https://via.placeholder.com/200x200.png" alt="Album Cover">
+        <h2>Album Title</h2>
+        <h3>Artist Name</h3>
+        <p>Duration: 3:45</p>
+      </div>
+      <button class="like-btn" id="like-btn">
+        <i class="fa-solid fa-heart-pulse"></i>
+      </button>
+    </div>
+    
+    <script src = "spotify-api-auth/discovery.js" type = "module"></script>
+  </body>
+</html>

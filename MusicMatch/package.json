@@ -1,0 +1,23 @@
+{
+  "name": "musicmatch",
+  "version": "1.0.0",
+  "description": "You are to start your team project here. Read the documentation for [Pr2: Creative Idea](https://umass-cs-326.github.io/docs/project/Idea/) and replace this paragraph with your team's creative web application idea!",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node ./server/forumCrud.js"
+  },
+  "author": "rahul",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "env": "^0.0.2",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.10.0",
+    "pouchdb": "^8.0.1"
+  }
+}

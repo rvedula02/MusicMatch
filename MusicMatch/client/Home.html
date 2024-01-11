@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>MusicMatch</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .header {
+        background-color: #256dd8; 
+        color: white;
+        padding: 10px; 
+        text-align: center; 
+        letter-spacing: 3px;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .nav-tabs > li.active > a {
+        color: blue;
+      }
+
+      .nav-tabs > li > a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .nav-tabs {
+        border: none;
+      }
+
+      .strip2 {
+        background-color: #256dd8;
+        color: white;
+        border-radius: 10px;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .btn-orange {
+        background-color: orange;
+        color: white;
+        height: 200px;
+        white-space: normal; 
+      }
+
+      .btn-green {
+        background-color: green;
+        color: white;
+        border-radius: 4px;
+        margin-top: 8px;
+        margin-right: 6px;
+      }
+
+      .login-button {
+        background-color: #1db954;
+        border: none;
+        border-radius: 50px;
+        color: #fff;
+        cursor: pointer;
+        padding: 16px 16px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="/client/Home.html">MusicMatch</a></li>
+        <li><a href="/client/groups.html">CrewMatch</a></li>
+        <li><a href="/client/Playlists.html">Playlists</a></li>
+        <li><a href="/client/Discover.html">Discover</a></li>
+        <li class="navbar-right"><button id="signin" class="login-button">Sign into Spotify</button></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="container-fluid" style="padding-left:0px; padding-right:0px;">
+          <div class="row">
+            <div class="col-sm-6 strip2">
+              <h2>Music Recommendation</h2>
+              <p>This application intends to create a platform that someone can use to discover both people AND music. The app analyzes user's music preferences so new songs are recommended based on whether they like a song or not. Many music apps nowadays have shortcomings in the way users find music, so our app is a more interactive and unique method that music listeners can use. </p>
+            </div>
+            <div></div>
+            <div class="col-sm-6 strip2">
+              <h2>Getting Started</h2>
+              <p>To begin your music discovery journey, click on the sign in button on the top right of this page. Once you enter the details of your Spotify account, you will be taken back to this page. You can then click on the discover page to start finding the music you love! </p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="container" style="margin-top: 30px;">
+      <div class="row">
+        <div class="col-sm-4">
+          <button id="crew" type="button" class="btn btn-orange btn-block rounded-0">CrewMatch is a feature where users can post on a forum about events they plan on attending in the future. They can put information such as artist and event name so that other users can contact them if they want to meet people and go to events with them. This platform is the main social networking part of our application, as users can pick and choose who they want to reach out to. </button>
+        </div>
+        <div class="col-sm-4">
+          <button id="discover" type="button" class="btn btn-orange btn-block rounded-0">The discover feature is one of the main features. Users have to sign into their Spotify account for this feature to work. It is in a swiping style interface, where users can click on a like or dislike button after hearing a snippet of the song. The application then recommends new songs based on what the user clicks, and songs that are liked are added to a central playlist. </button>
+        </div>
+        <div class="col-sm-4">
+          <button id="playlist" type="button" class="btn btn-orange btn-block rounded-0">Users can also create playlists based off songs they like. They can make names for the playlist, which will then automatically have the songs they preferred to listen to through the discovery feature. This feature helps users in that they don’t have to individually remember the songs they liked, and can find them all in one place.</button>
+        </div>
+      </div>
+    </div>
+    <script src="/client/spotify-api-auth/getToken.js" type="module"></script>
+  </body>
+</html>

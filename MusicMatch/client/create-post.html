@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Post - Event Forum</title>
+  <link rel="stylesheet" href="./createForum.css">
+  <style>
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    /* Add the styles for the button */
+    .back-button {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 50%; /* Set the width to 50% */
+    }
+
+    .back-button:hover {
+      background-color: #555;
+    }
+
+    .create-post-button {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 50%; /* Set the width to 50% */
+      text-align: center; /* Align the button to the right */
+    }
+
+    .create-post-button:hover {
+      background-color: #555;
+    }
+  </style>
+  <script type="module" src="js/createForumPost.js"></script>
+</head>
+<body>
+  <h1>Create Post</h1>
+  
+  <form id="form">
+    <label for="artist-name">Artist Name:</label>
+    <input type="text" id="artist-name" placeholder="Example: Drake" name="artist-name" required>
+    <br>
+    
+    <label for="event-date">Event Date:</label>
+    <input type="date" id="event-date" name="event-date" required>
+    <br>
+    
+    <label for="event-name">Event Name:</label>
+    <input type="text" id="event-name" placeholder="Example: Coachella" name="event-name" required>
+    <br>
+    
+    <label for="post-content">Description:</label>
+    <textarea id="post-content" name="post-content" rows="10" cols="50" placeholder="Example: Hi everyone! My name is Jimmy and I am interested in attending the Drake concert on 6/1/2023. Reach out to me at jimmylovesconcerts@gmail.com if you are interested!" required></textarea>
+    <br>
+    
+    <label for="date-posted">Date Posted:</label>
+    <input type="date" id="date-posted" name="date-posted" required>
+    <br>
+    <div class="button-container">
+      <button class="back-button" onclick="goBack()">Go Back</button>
+      <input type="submit" class="create-post-button" value="Create Post">
+    </div>
+
+
+  </form>
+  
+
+  <script>
+    function goBack() {
+      window.location.href = "groups.html";
+    }
+  </script>
+
+</body>
+</html>

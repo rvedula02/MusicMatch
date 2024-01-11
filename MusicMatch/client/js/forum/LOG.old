@@ -1,0 +1,21 @@
+<<<<<<< HEAD
+2023/04/24-14:54:02.314 81fc Recovering log #18
+2023/04/24-14:54:02.314 81fc Level-0 table #20: started
+2023/04/24-14:54:02.319 81fc Level-0 table #20: 237 bytes OK
+2023/04/24-14:54:02.325 81fc Delete type=0 #18
+2023/04/24-14:54:02.325 81fc Delete type=3 #16
+2023/04/24-14:54:02.327 a4c8 Compacting 4@0 + 0@1 files
+2023/04/24-14:54:02.331 a4c8 Generated table #22@0: 1 keys, 237 bytes
+2023/04/24-14:54:02.331 a4c8 Compacted 4@0 + 0@1 files => 237 bytes
+2023/04/24-14:54:02.332 a4c8 compacted to: files[ 0 1 0 0 0 0 0 ]
+2023/04/24-14:54:02.332 a4c8 Delete type=2 #11
+2023/04/24-14:54:02.333 a4c8 Delete type=2 #14
+2023/04/24-14:54:02.333 a4c8 Delete type=2 #17
+2023/04/24-14:54:02.333 a4c8 Delete type=2 #20
+=======
+2023/04/24-01:38:25.802508 1709cf000 Recovering log #6
+2023/04/24-01:38:25.802880 1709cf000 Level-0 table #8: started
+2023/04/24-01:38:25.803023 1709cf000 Level-0 table #8: 237 bytes OK
+2023/04/24-01:38:25.803501 1709cf000 Delete type=0 #6
+2023/04/24-01:38:25.803543 1709cf000 Delete type=3 #4
+>>>>>>> 5a3b69d481abe64fa77790941a34d880f142641a
